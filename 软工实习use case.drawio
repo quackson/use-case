@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2020-10-18T08:19:14.799Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="ZYyK2ovb9CEomdE5Hd4s" version="13.8.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-10-18T09:46:29.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="7VE4DuKyg9ihOvT1uPwx" version="13.8.0" type="github" pages="2">
   <diagram id="0C442tjUMzfvRgD-rWmv" name="Page-1">
-    <mxGraphModel dx="946" dy="378" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#DAD2D8" math="0" shadow="0">
+    <mxGraphModel dx="676" dy="270" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#DAD2D8" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Aq8MUgiEz7kiHm_kLCTz-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
           <mxGeometry x="50" y="230" width="60" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-2" value="Use case" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-2" value="协同日历系统" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
           <mxGeometry x="160" y="30" width="610" height="650" as="geometry" />
         </mxCell>
         <mxCell id="Aq8MUgiEz7kiHm_kLCTz-7" value="&lt;font style=&quot;font-size: 10px&quot;&gt;查看个人日历&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
