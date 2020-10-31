@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-31T06:51:39.372Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="LlHx_kxOebdUz9Toiw-R" version="13.8.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-10-31T16:59:41.524Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="REUwxzBxOwc1IJGGqERx" version="13.8.8" type="github" pages="4">
   <diagram id="0C442tjUMzfvRgD-rWmv" name="Page-1">
     <mxGraphModel dx="473" dy="189" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#DAD2D8" math="0" shadow="0">
       <root>
@@ -159,6 +159,236 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CQz8t2itkyQ89M_VoTo9" name="Page-2">
+    <mxGraphModel dx="633" dy="222" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="s3CmU2joFz6qiKgKJhzo-0" />
+        <mxCell id="s3CmU2joFz6qiKgKJhzo-1" parent="s3CmU2joFz6qiKgKJhzo-0" />
+        <mxCell id="PdysoxyuoMA2rZShztXX-0" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="s3CmU2joFz6qiKgKJhzo-1" vertex="1">
+          <mxGeometry x="70" y="140" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-1" value="+userID: int&#xa;+userName:string&#xa;+usercalendar:Calender&#xa;+usertasklist:Task[0...*]&#xa;+usergrouplist:Group[0...*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-0" vertex="1">
+          <mxGeometry y="26" width="180" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-0" vertex="1">
+          <mxGeometry y="110" width="180" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-3" value="+createGroup([in]mem:User[0...*])&#xa;+acceptGroup([in]newgroup:Group)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-0" vertex="1">
+          <mxGeometry y="128" width="180" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-4" value="Task" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="s3CmU2joFz6qiKgKJhzo-1" vertex="1">
+          <mxGeometry x="540" y="150" width="120" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-5" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-4" vertex="1">
+          <mxGeometry y="26" width="120" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-4" vertex="1">
+          <mxGeometry y="52" width="120" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-7" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-4" vertex="1">
+          <mxGeometry y="60" width="120" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-8" value="Calendar" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="s3CmU2joFz6qiKgKJhzo-1" vertex="1">
+          <mxGeometry x="390" y="400" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-9" value="+startDate: Date&#xa;+endDate:Date&#xa;+taskList:Task[0...*]&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-8" vertex="1">
+          <mxGeometry y="26" width="150" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-8" vertex="1">
+          <mxGeometry y="80" width="150" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-11" value="+showTask([in]date:Date)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-8" vertex="1">
+          <mxGeometry y="88" width="150" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-12" value="Groupleader" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="s3CmU2joFz6qiKgKJhzo-1" vertex="1">
+          <mxGeometry x="70" y="446" width="210" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-12" vertex="1">
+          <mxGeometry y="26" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-15" value="+makeProposal([in]newp:Proposal)&#xa;+agreeProposal([in]p:Proposal)&#xa;+disagreeProposal([in]p:Proposal)&#xa;+acceptTask([in]newtask:Task)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-12" vertex="1">
+          <mxGeometry y="34" width="210" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-24" value="Group" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="s3CmU2joFz6qiKgKJhzo-1" vertex="1">
+          <mxGeometry x="320" y="130" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-25" value="+groupID:int&#xa;+groupname:string&#xa;+groupcalendar:Calendar&#xa;+proposal:Proposal[0...*]&#xa;+ member: Groupmember[0...*]&#xa;+groupLeader:Groupleader" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-24" vertex="1">
+          <mxGeometry y="26" width="180" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-24" vertex="1">
+          <mxGeometry y="130" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-28" value="Groupmember" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="s3CmU2joFz6qiKgKJhzo-1" vertex="1">
+          <mxGeometry x="310" y="580" width="210" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-28" vertex="1">
+          <mxGeometry y="26" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PdysoxyuoMA2rZShztXX-31" value="+makeProposal([in]newp:Proposal)&#xa;+agreeProposal([in]p:Proposal)&#xa;+disagreeProposal([in]p:Proposal)&#xa;+createTask([in]idlist:User[1...*])&#xa;+deleteTask([in]task:Task)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="PdysoxyuoMA2rZShztXX-28" vertex="1">
+          <mxGeometry y="34" width="210" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Page-1" id="Vvg3C_JtjY252e-7iBKH">
+    <mxGraphModel dx="473" dy="189" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#DAD2D8" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="50" y="230" width="60" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-2" value="协同日历系统" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="160" y="30" width="610" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-7" value="&lt;font style=&quot;font-size: 10px&quot;&gt;查看个人日历&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="180" y="75" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-8" value="&lt;span style=&quot;font-size: 10px&quot;&gt;创建群组&lt;br&gt;----------------------------&lt;br&gt;扩展点：发布任务，删除任务&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="290" y="290" width="117.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-9" value="接受群组邀请&lt;br&gt;------------------------------&lt;br&gt;扩展点：提出待办事项，查看群日历" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="195" y="500" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-13" value="&lt;font style=&quot;font-size: 11px&quot;&gt;发布任务&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="475" y="200" width="110" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-14" value="提出待办事项" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="520" y="552" width="117.5" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-16" value="规定任务紧迫级别" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="560" y="70" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-17" value="赞同/否决待办事项" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="280" y="385" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-19" value="" style="endArrow=none;html=1;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-7" target="Aq8MUgiEz7kiHm_kLCTz-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="124.28932188134524" y="165" as="sourcePoint" />
+            <mxPoint x="124.28932188134524" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-20" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-1" target="Aq8MUgiEz7kiHm_kLCTz-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="380" as="sourcePoint" />
+            <mxPoint x="190" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-21" value="" style="endArrow=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-9" target="Aq8MUgiEz7kiHm_kLCTz-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="124.28932188134524" y="375" as="sourcePoint" />
+            <mxPoint x="124.28932188134524" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-26" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-13" target="Aq8MUgiEz7kiHm_kLCTz-16" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="130" as="sourcePoint" />
+            <mxPoint x="530" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-27" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.924;entryY=0.228;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.075;exitY=0.784;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-13" target="Aq8MUgiEz7kiHm_kLCTz-8" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="170" as="sourcePoint" />
+            <mxPoint x="480" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-28" value="" style="endArrow=none;html=1;exitX=0.01;exitY=0.657;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-17" target="Aq8MUgiEz7kiHm_kLCTz-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="250" as="sourcePoint" />
+            <mxPoint x="90" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-35" value="&lt;font style=&quot;font-size: 6px ; line-height: 10%&quot;&gt;扩展条件：{有任务需要发布，成员提出的待办事项通过}&lt;br style=&quot;font-size: 6px&quot;&gt;扩展点：发布任务&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="340" y="90" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-36" value="" style="endArrow=none;dashed=1;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-35" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="385" y="100" as="sourcePoint" />
+            <mxPoint x="460" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-46" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-14" target="Aq8MUgiEz7kiHm_kLCTz-9" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="410" y="200" as="sourcePoint" />
+            <mxPoint x="570" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-49" value="扩展条件：{成员想到一个新的待办事项}&lt;br&gt;扩展点：提出待办事项&lt;br&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;rounded=0;sketch=0;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="355" y="470" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-50" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" target="Aq8MUgiEz7kiHm_kLCTz-49" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="580" as="sourcePoint" />
+            <mxPoint x="420" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-57" value="规定任务执行人" style="ellipse;whiteSpace=wrap;html=1;rounded=0;sketch=0;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="620" y="280" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Aq8MUgiEz7kiHm_kLCTz-58" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-13" target="Aq8MUgiEz7kiHm_kLCTz-57" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="230" as="sourcePoint" />
+            <mxPoint x="660" y="220" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lOJWtZVQG0SMTf90hQuc-2" value="标注非空闲时间" style="ellipse;whiteSpace=wrap;html=1;rounded=0;sketch=0;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="200" y="190" width="120" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="lOJWtZVQG0SMTf90hQuc-5" value="" style="endArrow=none;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-1" target="lOJWtZVQG0SMTf90hQuc-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="290" as="sourcePoint" />
+            <mxPoint x="240" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lOJWtZVQG0SMTf90hQuc-6" value="规定任务时间/内容" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="640" y="150" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lOJWtZVQG0SMTf90hQuc-7" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="Aq8MUgiEz7kiHm_kLCTz-13" target="lOJWtZVQG0SMTf90hQuc-6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="540" y="210" as="sourcePoint" />
+            <mxPoint x="597.7862744685633" y="145.41534029984098" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5eROo0eHRWx0oekMJlQm-1" value="删除任务" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="630" y="360" width="105" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="5eROo0eHRWx0oekMJlQm-2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="5eROo0eHRWx0oekMJlQm-1" target="Aq8MUgiEz7kiHm_kLCTz-8" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="520" y="430" as="sourcePoint" />
+            <mxPoint x="680" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5eROo0eHRWx0oekMJlQm-4" value="&lt;font style=&quot;font-size: 6px ; line-height: 10%&quot;&gt;扩展条件：{有任务需要删除}&lt;br style=&quot;font-size: 6px&quot;&gt;扩展点：删除任务&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="450" y="400" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5eROo0eHRWx0oekMJlQm-5" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#A8201A;fontColor=#143642;exitX=0;exitY=0;exitDx=53;exitDy=0;exitPerimeter=0;labelBackgroundColor=#DAD2D8;" parent="1" source="5eROo0eHRWx0oekMJlQm-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="270" as="sourcePoint" />
+            <mxPoint x="470" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5eROo0eHRWx0oekMJlQm-6" value="查看群日历" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="402.5" y="600" width="117.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5eROo0eHRWx0oekMJlQm-8" value="&amp;lt;&amp;lt;exntend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;" parent="1" source="5eROo0eHRWx0oekMJlQm-6" target="Aq8MUgiEz7kiHm_kLCTz-9" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="120" y="570" as="sourcePoint" />
+            <mxPoint x="280" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5eROo0eHRWx0oekMJlQm-9" value="扩展条件：{作为成员想查看该群组任务及日程}&lt;br&gt;扩展点：查看群日历" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;rounded=0;sketch=0;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" parent="1" vertex="1">
+          <mxGeometry x="195" y="600" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5eROo0eHRWx0oekMJlQm-10" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#A8201A;fontColor=#143642;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=#DAD2D8;" parent="1" source="5eROo0eHRWx0oekMJlQm-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="590" as="sourcePoint" />
+            <mxPoint x="330" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Page-2" id="l8GX9Etuhfwgce9CuKpx">
     <mxGraphModel dx="462" dy="158" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="s3CmU2joFz6qiKgKJhzo-0" />
